@@ -1,0 +1,227 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: 1.4s;
+    background: whitesmoke;
+}
+
+article {
+    background: url(/h.jpg) no-repeat;
+    
+    background-position: center;
+    height: 100vh;
+    transition: all .5s ease;
+}
+
+.up {
+     background-color: #111c38;
+     padding: 29px;
+}
+ul {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+ 
+}
+ul li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+ul:hover li a {
+  transform: scale(1.3);
+  opacity:.2;
+  filter: blur(3px)
+}
+ul li a:hover {
+  transform: scale(1.7);
+  opacity: 1;
+  filter: blur(0)
+}
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff497c;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover:before {
+    transition: transform 0.5s;
+  
+  transform: scaleX(1);
+  z-index: -1;
+}
+.ic {
+    font-size: 30px;
+}
+.parg {
+    font-size: 15px;
+}
+/*///////////////////////////////////////////////////////////*/
+.bg {
+    padding: 60px;
+    background-image: url(/pro.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 30px;
+    margin: 20px 40px;
+    color: black;
+    text-align: center;
+    
+}
+
+.mo {
+     background: whitesmoke;
+     padding: 20px 20px;
+     transition: 0.6s;
+     margin: 10px 30px;
+     
+     
+}
+.mo:hover {
+    box-shadow: 0 0 7px 0 black;
+    transform: scale(1.006);
+}
+
+
+/*////////////////////////////////////////////////////////////*/
+.zena {
+    font-size: 25px;
+    color: white;
+    float: right;
+    display: flex;
+}
+.html {
+    transition: 0.6s;
+}
+.html:hover{
+    color: orangered;
+    
+}
+
+.css {
+    transition: 0.6s;
+}
+
+.css:hover {
+    color: dodgerblue;
+}
+.js {
+    transition: 0.6s;
+}
+
+.js:hover {
+    color: yellow;
+}
+.dark-mode{
+    color: black;
+    transition: 0.7s;
+}
+.dark-mode:hover{
+    color: white;
+}
+.load div{
+    position: relative;
+    display: inline-block;
+    margin: 3.5px;
+    margin-bottom: -5px;
+    border-radius: 50%;
+    background-color:royalblue;
+    width: 30px;
+    height: 30px;
+    animation-name: ud;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 100px;
+}
+.two {
+  animation-delay: 0.3s;
+}
+.three {
+    animation-delay: 0.6s;
+}
+.un {
+    
+    
+    
+    color:royalblue;
+    animation-name: udtx;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.wht{
+    color: white;
+}
+.body-after-click {
+    background-color:  #0b042b;
+}
+.button {
+    
+}
+.button-after-click {
+    
+}
+.dark {
+    color: white;
+    
+}
+.dark-after-click {
+    
+}
+.move-up{
+    
+    z-index: 1;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    background: royalblue;
+}
+@media (max-width:950px)  {
+
+    .bg{
+        background-position: top;
+    }
+}
+
+
+
+@keyframes ud{
+    to {
+        opacity: 0.3;
+        transform: translateY(-50px);
+    }
+        
+}
+
+@keyframes udtx {
+    to {
+        
+        opacity: 0.3;
+        transform: translateZ(-50px);
+    }
+
+}
